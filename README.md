@@ -29,7 +29,7 @@ A simple, locally-saved TODO list widget for the [DankMaterialShell](https://git
 ### Via DMS CLI
 
 ```bash
-dms plugins install dankTodo
+hype plugins install dankTodo
 ```
 
 ### Manually
@@ -70,15 +70,15 @@ A blue line marks sibling drops; a tinted background marks child drops. Dropping
 ## IPC
 
 ```bash
-dms ipc call dankTodo add "Buy milk"
-dms ipc call dankTodo addChild "Whole milk" <parentId>
-dms ipc call dankTodo edit <id> "New text"
-dms ipc call dankTodo toggle <id>
-dms ipc call dankTodo remove <id>
-dms ipc call dankTodo move <sourceId> <targetId> <position>   # position: before | after | child
-dms ipc call dankTodo clearDone
-dms ipc call dankTodo list       # returns JSON array
-dms ipc call dankTodo count      # returns "active/total"
+hype ipc call dankTodo add "Buy milk"
+hype ipc call dankTodo addChild "Whole milk" <parentId>
+hype ipc call dankTodo edit <id> "New text"
+hype ipc call dankTodo toggle <id>
+hype ipc call dankTodo remove <id>
+hype ipc call dankTodo move <sourceId> <targetId> <position>   # position: before | after | child
+hype ipc call dankTodo clearDone
+hype ipc call dankTodo list       # returns JSON array
+hype ipc call dankTodo count      # returns "active/total"
 ```
 
 Great for binding "add todo from current clipboard" to a key in your compositor.
@@ -88,7 +88,7 @@ Great for binding "add todo from current clipboard" to a key in your compositor.
 ```kdl
 binds {
     Mod+Shift+T hotkey-overlay-title="Add clipboard to Todo" {
-        spawn "sh" "-c" "dms ipc call dankTodo add \"$(wl-paste -n)\"";
+        spawn "sh" "-c" "hype ipc call dankTodo add \"$(wl-paste -n)\"";
     }
 }
 ```

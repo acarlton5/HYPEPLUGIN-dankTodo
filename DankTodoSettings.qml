@@ -241,7 +241,7 @@ PluginSettings {
 
             StyledText {
                 width: parent.width
-                text: "dms ipc call dankTodo add \"Buy milk\"\ndms ipc call dankTodo toggle <id>\ndms ipc call dankTodo remove <id>\ndms ipc call dankTodo clearDone\ndms ipc call dankTodo list\ndms ipc call dankTodo count"
+                text: "hype ipc call dankTodo add \"Buy milk\"\nhype ipc call dankTodo toggle <id>\nhype ipc call dankTodo remove <id>\nhype ipc call dankTodo clearDone\nhype ipc call dankTodo list\nhype ipc call dankTodo count"
                 font.pixelSize: Theme.fontSizeSmall
                 font.family: "monospace"
                 color: Theme.surfaceVariantText

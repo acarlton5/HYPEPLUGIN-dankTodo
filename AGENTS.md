@@ -10,16 +10,16 @@ A [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) (DMS) ba
 
 ```bash
 # Reload DMS to pick up changes (most edits require this)
-dms ipc call appearance reload
+hype ipc call appearance reload
 
 # Exercise IPC surface the widget exposes
-dms ipc call dankTodo add "Buy milk"
-dms ipc call dankTodo addChild "Whole milk" <parentId>
-dms ipc call dankTodo edit <id> "new text"
-dms ipc call dankTodo toggle <id>
-dms ipc call dankTodo move <sourceId> <targetId> <before|after|child>
-dms ipc call dankTodo list        # JSON dump of current state
-dms ipc call dankTodo count       # "active/total"
+hype ipc call dankTodo add "Buy milk"
+hype ipc call dankTodo addChild "Whole milk" <parentId>
+hype ipc call dankTodo edit <id> "new text"
+hype ipc call dankTodo toggle <id>
+hype ipc call dankTodo move <sourceId> <targetId> <before|after|child>
+hype ipc call dankTodo list        # JSON dump of current state
+hype ipc call dankTodo count       # "active/total"
 ```
 
 There is no lint or test suite. Validate changes by reloading DMS and driving the popout manually, or via the IPC calls above.
